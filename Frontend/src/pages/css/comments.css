@@ -1,0 +1,108 @@
+.comments_page_container
+{
+    margin-top: 150px;
+    display: flex;
+}
+.comments_product_container
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+.comments_product_photo,
+.comment_image,
+.comment_image_container
+{
+    width: 300px;
+    height: 300px;
+}
+.comments_product_name
+{
+    color: black;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 600;
+}
+.comments_comments_container
+{
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.comments_title
+{
+    color: black;
+    font-size: 16pt;
+    font-weight: 600;
+}
+.comments_comment_container
+{
+    width: 800px;
+    height: 150px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 20px 35px, rgba(0, 0, 0, 0.08) 0px 4px 6px, rgba(0, 0, 0, 0.11) 0px 12px 13px, rgba(0, 0, 0, 0.06) 0px -3px 5px;
+}
+
+.comments_comment_container:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 35px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.comments_user
+{
+    color: #000;
+    text-align: right;
+    font-size: 12pt;
+}
+.comments_user
+{
+    font-weight: 500;
+}
+.comments_comments_page_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.comments_page
+{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16pt;
+    font-weight: 500;
+}
+.comments_page div
+{
+    color: darkgray;
+    cursor: default;
+}
+.comments_page button
+{
+    font-size: 16pt;
+    font-weight: 500;
+    color: darkgray;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    margin: 0px 10px;
+    border: #000;
+    transform: translate(0px, 2px);
+}
+.comments_page .active
+{
+    color: black;
+}
+.comments_page button.active
+{
+    cursor: pointer;
+}

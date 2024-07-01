@@ -1,0 +1,51 @@
+.login_before_asking,
+.login_before_asking a
+{
+    margin-top: 15pt;
+    color: black;
+}
+.ask_a_question,
+.ask_a_question form
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ask_a_question form
+{
+    flex-direction: column;
+    align-items: end;
+    width: 800px;
+    height: 100px;
+}
+.ask_a_question_title
+{
+    color: black;
+    font-size: 16pt;
+    width: 10%;
+}
+.ask_a_question textarea
+{
+    height: 100px;
+    width: 90%;
+    color: black;
+    resize: none;
+}
+.ask_a_question_flex_container
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.ask_a_question button
+{
+    color: black;
+    font-size: 12pt;
+    font-weight: 500;
+    margin: 0%;
+    padding: 0%;
+    height: 20px;
+}

@@ -1,0 +1,103 @@
+.brands-home
+{
+    position: relative;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B0C10;
+    box-shadow: #0B0C10 0px 20px 35px;
+    margin: 100px 0px;
+}
+.brands-home.theme
+{
+    flex-direction: row-reverse;
+}
+.title
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0px);
+    top: 42px;
+    display: flex;
+    font-weight: 700;
+    font-size: 28pt;
+}
+.brand-detail
+{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 0px;
+    align-items: center;
+}
+.brand-detail img
+{
+    width: 256px;
+    height: 256px;
+    margin-bottom: 15px;
+}
+
+.brand-detail .detail
+{
+    font-weight: 600;
+    font-size: 14pt;
+    color: #eff;
+    transition: all .15s ease;
+    text-shadow: rgba(255,255,255, 0.1) 0px 0px 35px, rgba(255,255,255, 0.06) 0px 4px 6px, rgba(255,255,255, 0.08) 0px 12px 13px, rgba(255,255,255, 0.04) 0px -4px 5px;
+}
+
+.brand-detail .description
+{
+    text-align: center;
+    width: 75%;
+    margin: 15px 50px;
+    font-weight: 400;
+    font-size: 10pt;
+}
+
+.brand-products
+{
+    height: 60%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brands-home .products-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+    height: 100%;
+}
+.brands-home.theme .products-container
+{
+    justify-content: end;
+    position: relative;
+}
+.brand-products .brands-home-page-change-container
+{
+    display: flex;
+    column-gap: .5rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%,0px);
+}
+.brand-products .brands-home-page-change-container .page-button
+{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgba(255,255,255, 0.4);
+    transition: all .2s ease-in-out;
+}
+.brand-products .brands-home-page-change-container .page-button:hover
+{
+    background-color: rgba(255,255,255, 0.7);
+}

@@ -1,0 +1,111 @@
+.user_transactions_container
+{
+    margin: 135px 50px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.welcome_container .welcome
+{
+    font-size: 32pt;
+    color: black;
+    font-weight: 500;
+}
+.welcome_container .info
+{
+    margin-top: 15px;
+    font-size: 14pt;
+    color: black;
+    font-weight: 400;
+}
+.user_transactions_form_container
+{
+    margin: 10px;
+}
+.user_transactions_form_container label
+{
+    font-size: 16pt;
+    color: black;
+}
+.user_transactions_form_container div div
+{
+    text-align: start;
+    position: relative;
+    margin-top: 15px;
+    width: 600px;
+}
+.user_transactions_form_container div div input
+{
+    color: black;
+    font-size: 16pt;
+    position: absolute;
+    right: 0%;
+    width: 85%;
+}
+.user_transactions_form_container div
+{
+    position: relative;
+}
+.user_transactions_form_container div button
+{
+    position: absolute;
+    margin-top: 15px;
+    font: inherit;
+    font-size: 13pt;
+    font-weight: 500;
+    color: black;
+    background: none;
+	border: black solid 1px;
+	padding: 5px;
+	cursor: pointer;
+	outline: inherit;
+    right: 0%;
+    box-shadow: none;
+    transition: all 0.15s ease-in-out;
+}
+.user_transactions_form_container div a
+{
+    position: absolute;
+    margin-top: 15px;
+    font-size: 13pt;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    background: none;
+	border: black solid 1px;
+	padding: 5px;
+	cursor: pointer;
+	outline: inherit;
+    right: 74%;
+    box-shadow: none;
+    transition: all 0.15s ease-in-out;
+}
+.user_transactions_form_container div a.forgot_pass
+{
+    right: 31.8%;
+}
+.user_transactions_form_container div a.login
+{
+    right: 73%;
+}
+.user_transactions_form_container div a:hover,
+.user_transactions_form_container div button:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 20px 35px, rgba(0, 0, 0, 0.06) 0px 4px 6px, rgba(0, 0, 0, 0.07) 0px 12px 13px, rgba(0, 0, 0, 0.03) 0px -3px 5px;
+}
+.login_error_box
+{
+    position: absolute;
+    font-size: 20pt;
+    z-index: 1000;
+    bottom: -50px;
+    padding: 20px;
+    cursor: default;
+    background-color: black;
+}
+.error_info
+{
+    font-size: 12pt;
+}

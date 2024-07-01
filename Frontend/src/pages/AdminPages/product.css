@@ -1,0 +1,158 @@
+.updateproductpage
+{
+    margin-top: 125px;
+    margin-left: 40px;
+    position: relative;
+}
+
+form.updateproduct label,
+form.updateproduct input,
+form.updateproduct button,
+form.updateproduct select,
+form.updateproduct option,
+form.updateproduct textarea
+{
+    color: black;
+}
+.updateproductpage .top
+{
+    display: flex;
+}
+.updateproductpage .top .left
+{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.updateproductpage .top .left div
+{
+    display: flex;
+}
+.updateproductpage .top .left label,
+.updateproductpage .top .left select,
+.updateproductpage .top .left option,
+.updateproductpage .top .left input
+{
+    min-width:  400px;
+    font-size: 16pt;
+}
+.updateproductpage .top .left label
+{
+    min-width: 200px;
+}
+.updateproductpage .top .left select,
+.updateproductpage .top .left option
+{
+    min-width: 408px;
+}
+.updateproductpage .top .left label
+{
+    display: flex;
+}
+.updateproductpage .top .transverse-mid
+{
+    transform: translate(0px, -5px);
+}
+.updateproductpage .top .transverse-mid label,
+.updateproductpage .top .transverse-mid input
+{
+    font-size: 14pt;
+}
+.updateproductpage label
+{
+    font-weight: 500;
+}
+.updateproductpage .top div
+{
+    margin-bottom: 4px;
+}
+.updateproductpage .left div
+{
+    margin-bottom: 5px;
+}
+.updateproductpage .bottom
+{
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+}
+.updateproductpage .bottom label
+{
+    font-size: 16pt;
+    font-weight: 600;
+    width: 190px;
+}
+.updateproductpage .bottom .left
+{
+    transform: translate(0px,-8px);
+}
+.updateproductpage .bottom .left label
+{
+    margin-right: 10px;
+}
+.updateproductpage .bottom div
+{
+    display: flex;
+}
+.updateproductpage .bottom .left div
+{
+    align-items: baseline;
+    text-align: end;
+}
+.updateproductpage .bottom textarea
+{
+    width: 720px;
+    height: 180px;
+}
+.updateproductpage .bottom .left
+{
+    display: flex;
+    flex-direction: column;
+}
+.updateproductpage .bottom .right
+{
+    display: inline; margin-left: 5px;
+}
+form.updateproduct button
+{
+    margin-top: 12px;
+    width: 50%;
+    height: 100px;
+    font-size: 16pt;
+    background-color: #0f0;
+}
+
+form.updateproduct textarea
+{
+    font: inherit;
+}
+.admin_error,
+.admin_success
+{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 5px;
+    font-size: 16pt;
+    cursor: default;
+    box-shadow: rgba(0, 0, 0, .1) 0px 20px 35px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.admin_success
+{
+    background-color: #0f0;
+}
+.admin_error
+{
+    background-color: #f00;
+}
+.updateproductpage a.goback
+{
+    color: black;
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    text-decoration: none;
+    font: inherit;
+    font-weight: 500;
+}

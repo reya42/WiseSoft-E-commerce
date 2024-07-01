@@ -1,0 +1,125 @@
+.questions_page_container
+{
+    margin-top: 150px;
+    display: flex;
+}
+.questions_product_container
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+.questions_product_photo,
+.question_image,
+.question_image_container
+{
+    width: 300px;
+    height: 300px;
+}
+.questions_product_name
+{
+    color: black;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 600;
+}
+.questions_questions_container
+{
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.questions_title
+{
+    color: black;
+    font-size: 16pt;
+    font-weight: 600;
+}
+.questions_question_container
+{
+    width: 800px;
+    height: 150px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 20px 35px, rgba(0, 0, 0, 0.08) 0px 4px 6px, rgba(0, 0, 0, 0.11) 0px 12px 13px, rgba(0, 0, 0, 0.06) 0px -3px 5px;
+}
+
+.questions_question_container:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 35px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.questions_user,
+.questions_content,
+.questions_date
+{
+    color: #000;
+    text-align: right;
+    font-size: 12pt;
+}
+.questions_user
+{
+    font-weight: 500;
+}
+.questions_answer_container
+{
+    text-align: left;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+}
+.questions_answer,
+.questions_answered_at
+{
+    color: #000;
+    font-size: 12pt;
+}
+
+.questions_questions_page_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questions_page
+{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16pt;
+    font-weight: 500;
+}
+.questions_page div
+{
+    color: darkgray;
+    cursor: default;
+}
+.questions_page button
+{
+    font-size: 16pt;
+    font-weight: 500;
+    color: darkgray;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    margin: 0px 10px;
+    border: #000;
+    transform: translate(0px, 2px);
+}
+.questions_page .active
+{
+    color: black;
+}
+.questions_page button.active
+{
+    cursor: pointer;
+}

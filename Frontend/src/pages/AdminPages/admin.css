@@ -1,0 +1,193 @@
+.adminpage_container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 1800px;
+    margin: 160px;
+    margin-top: 260px;
+}
+.adminpage_flex_container
+{
+    display: flex;
+}
+.adminpage_container a
+{
+    min-width: 190px;
+    min-height: 190px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border: rgba(0, 0, 0, 0.4) solid 1px ;
+    font-size: 16pt;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.adminpage_container a:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 35px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.adminpages_container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: 830px;
+    margin-top: 80px;
+}
+.adminpages_flex_container
+{
+    display: flex;
+}
+.adminpages_flex_container.upper div
+{
+    border-top: 1px solid black;
+    font-weight: 700 !important;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.adminpages_flex_container div
+{
+    width: 100px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    font-weight: 400;
+    border: black 1px ridge;
+    border-left: none;
+    border-top: none;
+}
+.admin_id
+{
+    width: 30px !important;
+}
+.color-green
+{
+    color: green !important;
+}
+.color-red
+{
+    color:red !important;
+}
+.admin_name,
+.admin_link
+{
+    width: 354px !important;
+}
+.admin_isactive,
+.admin_isnew,
+.admin_purchase
+{
+    width: 80px !important;
+}
+.admin_brand
+{
+    width: 60px !important;
+}
+.admin_category
+{
+    width: 140px !important;
+}
+.admin_edit
+{
+    width: 70px !important;
+}
+.admin_edit a,
+.admin_editanswer a
+{
+    color: black;
+}
+.adminpages_page_controller
+{
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.adminpages_page_controller div,
+.adminpages_page_controller button
+{
+    color: lightgray;
+    font-size: 13pt;
+    font-weight: 600;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.adminpages_page_controller div
+{
+    font-size: 14pt !important;
+    cursor: default;
+}
+.adminpages_page_controller button
+{
+    width: fit-content;
+    height: fit-content ;
+    padding: 0px;
+    border: none;
+    padding-top: 3px;
+}
+.adminpages_page_controller .active
+{
+    color: black;
+}
+.adminpages_page_controller button.active
+{
+    cursor: pointer;
+}
+.admin_id,
+.admin_category,
+.admin_link,
+.admin_hero,
+.admin_purchase,
+.admin_discount,
+.admin_isnew,
+.admin_edit
+{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.adminpages_addproduct
+{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 240px;
+    border: black solid 1px;
+    color: white;
+    font-size: 16pt;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0;
+    text-decoration: none;
+    height: 50px;
+}
+.admin_username
+{
+    width: 150px !important;
+}
+.admin_mail
+{
+    width: 260px !important;
+}
+.admin_question,
+.admin_answer
+{
+    width: 300px !important;
+}
+.admin_editanswer
+{
+    width: 142px !important;
+}

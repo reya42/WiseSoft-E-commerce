@@ -1,0 +1,180 @@
+div.navbar_parent
+{
+    position: relative;
+    width: 100%;
+    z-index: 250;
+    max-height: 85px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+div.navbar_parent div.navbar
+{
+    z-index: 250;
+    position: fixed;
+    top: 0%;
+    display: inline;
+}
+
+div.navbar_parent div.navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    background-color: #0B0C10;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 35px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navbar .login_container
+{
+    text-decoration: none;
+    position: absolute;
+    left: 75px;
+    max-width: 70px;
+    max-height: 70px;
+}
+.navbar .login_container img
+{
+    max-width: 70px;
+    max-height: 70px;
+    cursor: pointer;
+}
+
+div.navbar_parent div.navbar a.name
+{
+    cursor: pointer;
+    display: flex;
+    font-size: 32pt;
+    font-weight: 700;
+    margin: 0%;
+}
+div.navbar_parent div.navbar a.name:hover
+{
+    text-shadow: rgba(255, 255, 255, 0.25) 0px 0px 35px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -4px 5px;
+}
+
+div.navbar_parent div.navbar a.name p.wise
+{
+    margin: 0%;
+    transition: all .175s ease-in-out;
+}
+div.navbar_parent div.navbar a.name:hover p.wise
+{
+    transition: all .175s ease-in-out;
+}
+
+div.navbar_parent div.navbar a.name p.soft
+{
+    margin: 0%;
+    transition: all .30s ease-in-out;
+}
+div.navbar_parent div.navbar a.name:hover p.soft
+{
+    transition: all .30s ease-in-out;
+}
+
+
+div.navbar_parent div.navbar a
+{
+    text-decoration: none;
+    font-size: 18pt;
+    margin: 0%;
+    transition: all .2s ease-in-out;
+    border-radius: 25px;
+    padding: 3px 3px 5px 3px;
+    margin: 0px 50px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 20px 35px;
+}
+div.navbar_parent div.navbar a:hover
+{
+    transition: all .2s ease-in-out;
+    text-shadow: rgba(255, 255, 255, 0.25) 0px 0px 35px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -4px 5px;
+}
+
+.search-bar
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: right;
+    right: 5%;
+    top: 50%;
+    transform: translate(0px,-50%);
+    padding-right: 0px;
+    transition: all 0.3ms ease-in-out;
+}
+.search-bar input
+{
+    width: 0%;
+    height: 20px;
+    transition: all .3s ease-in-out;
+    color: #0B0C10;
+    background-color: #0B0C10;
+    border: #0B0C10;
+    margin: 0px 5px;
+}
+.search-bar:hover input
+{
+    width: 275px;
+    color: #0B0C10;
+    background-color: #0B0C10;
+    border: #EEE solid 1px;
+    color: #eee;
+}
+.search-bar button
+{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+.search-bar button img
+{
+    width: 40px;
+    height: 40px;
+}
+.search-bar .detailed-search
+{
+    font-size: 0pt;
+    color: rgb(200, 0, 0);
+    transition: all 0.2s ease-in-out;
+    width: max-content;
+    cursor: pointer;
+}
+.search-bar:hover .detailed-search
+{
+    font-size: 9pt;
+}
+.search-bar .detailed-search.active
+{
+    color: rgb(0, 200, 0);
+}
+.cart_container
+{
+    position: absolute;
+    right: -30px;
+}
+.cart
+{
+    position: relative;
+    display: flex;
+    padding: 3px 2px 2px 5px;
+    background-color: white;
+    border-radius: 100px;
+}
+.cart_icon
+{
+    max-width: 50px;
+}
+.cart_item_counter
+{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,290 @@
+.hero_parent
+{
+    color: #0B0C10;
+    font-weight: 400;
+    height: 945px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_parent .banners-container
+{
+    width: 1040px;
+    height: 650px;
+}
+.slide-wrapper
+{
+    position: relative;
+    overflow-x: auto;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.slider
+{
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.1) 0px 12px 13px, rgba(0, 0, 0, 0.07) 0px -4px 5px;
+}
+.slider img
+{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    transition: all .2s ease-in-out;
+}
+.slider-nav
+{
+    position: absolute;
+    display: flex;
+    column-gap: .5rem;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav div
+{
+    width: 1rem;
+    height: 1rem;
+    margin: 0.05rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .8);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav div.active
+{
+    margin: 0px;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+.slider-nav div:hover
+{
+    opacity: 1;
+}
+.hero_parent .hero-products
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    width: 600px;
+    height: 680px;
+    position: relative;
+    transform: translateY(40px);
+}
+
+.hero_parent .hero-products .hero-product-title
+{
+    cursor:default;
+    width: fit-content;
+    text-align: left;
+    font-size: 28pt;
+    font-weight: 750;
+    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 35px, rgba(0, 0, 0, 0.06) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 12px 13px, rgba(0, 0, 0, 0.04) 0px -4px 5px;
+    z-index: 0;
+    transition: all .5s ease;
+}
+.hero_parent .hero-products .hero-product-title:hover
+{
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 35px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.2) 0px 12px 13px, rgba(0, 0, 0, 0.14) 0px -4px 5px;
+}
+.hero_parent .hero-products .hero-product-title p
+{
+    width: fit-content;
+    color: #0B0C10;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    transform: translate(0px, -10px);
+}
+.hero-product
+{
+    font-weight: 500;
+    margin-top: 5px;
+    width: 100%;
+    height: 132px;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    z-index: 1;
+    transition: all .2s ease-in-out;
+}
+.hero-product:hover
+{
+    font-weight: 501;
+    transition: all .2s ease-in-out;
+    text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.1) 0px 12px 13px, rgba(0, 0, 0, 0.07) 0px -4px 5px;
+}
+.hero-product img
+{
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 126px;
+    height: 126px;
+    transition: all .2s ease-in-out;
+}
+
+.hero-product:hover img
+{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 132px;
+    height: 132px;
+    transition: all .2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.1) 0px 12px 13px, rgba(0, 0, 0, 0.07) 0px -4px 5px;
+}
+
+.hero-product .productdata
+{
+    height: 100%;
+    margin-left: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-product .productdata div
+{
+    color: #000;
+}
+
+.hero-product .productdata .product_name
+{
+    transition: all .1s ease-in-out;
+    font-size: 12pt;
+}
+.hero-product:hover .productdata .product_name
+{
+    transition: all .1s ease-in-out;
+    font-size: 12.5pt;
+}
+
+.prices
+{
+    display: flex;
+    align-items: center;
+}
+.hero-product .productdata .price
+{
+    transition: all .1s ease-in-out;
+    font-size: 12pt;
+}
+
+.hero-product .productdata .price.discounted
+{
+    text-decoration:line-through;
+    color: rgba(0,0,0, 0.5);
+    font-size: 9pt;
+    transition: all .1s ease-out;
+}
+
+.hero-product:hover .productdata .price
+{
+    transition: all .1s ease-in-out;
+    font-size: 12.5pt;
+}
+.hero-product:hover .productdata .price.discounted
+{
+    font-size: 10pt;
+    text-decoration: line-through;
+}
+.hero-product:hover .productdata .price.discounted:hover
+{
+    text-decoration: none;
+}
+.hero-product .productdata .discounted_price
+{
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+    transition: all .1s ease-in-out;
+    font-size: 12pt;
+}
+.hero-product .productdata .transactions
+{
+    display: flex;
+    flex-direction: row;
+}
+.hero-product .productdata .transactions a
+{
+    cursor: pointer;
+    color: #0B0C10;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.hero-product .productdata .transactions a img
+{
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 20px;
+    height: 20px;
+}
+.hero-product:hover .productdata .transactions a img
+{
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 22px;
+    height: 22px;
+    box-shadow:none;
+}
+.hero-product:hover .productdata .transactions a:hover img
+{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 26px;
+    height: 26px;
+    box-shadow:none;
+}
+
+
+.hero-product .product-img-holder
+{
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 126px;
+    height: 126px;
+    transition: all .2s ease-in-out;
+    background-color: #0B0C10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 400;
+}
+.hero-product:hover .product-img-holder
+{
+    margin-top: 0px;
+    margin-left: 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.1) 0px 12px 13px, rgba(0, 0, 0, 0.07) 0px -4px 5px;
+    width: 132px;
+    height: 132px;
+}
+
+.hero-page-changer-container
+{
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%,0px);
+}
+.show-all-products
+{
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+    left: 0%;
+    padding: 2px 5px;
+    color: #c0c0c0;
+    border-radius: 5px;
+    background-color: rgb(11, 12, 16);
+    transition: all .2s ease-in-out;
+}
+.show-all-products:hover
+{
+    color: #FFF;
+}

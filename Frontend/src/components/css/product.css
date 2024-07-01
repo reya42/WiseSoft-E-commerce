@@ -1,0 +1,173 @@
+
+.product-container 
+{
+    margin: 10px;
+    background-color: rgba(255,255,255, .1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .2s ease;
+    font-size: 11pt;
+    padding: 10px;
+    font-weight: 500;
+    box-shadow: none;
+}
+.product-container.theme
+{
+    padding-bottom: 15px;
+    background-color: rgba(0,0,0, .05) !important;
+}
+
+.product-container.theme:hover
+{
+    background-color: rgba(0,0,0, .1) !important;
+}
+
+.product-container .product-image,
+.product-container .product-img-holder
+{
+    margin: 20px;
+    width: 156px;
+    height: 156px;
+    transition: all .2s ease-in-out;
+}
+
+.product-container .product-img-holder
+{
+    background-color: #0B0C10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.product-container .product-brand
+{
+    color: rgba(255,255,255, .8);
+    font-size: 8pt;
+}
+.product-container .product-brand.theme
+{
+    color: rgba(11, 12, 16, 1);
+}
+.product-container .product-name
+{
+    font-size: 10pt;
+    color: rgba(255,255,255, 1);
+}
+.product-container .product-name.theme
+{
+    color: rgba(11, 12, 16, 1);
+}
+.product-container:hover
+{
+    background-color: rgba(255,255,255, .05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 35px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product-container:hover .product-image,
+.product-container:hover .product-img-holder
+{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    width: 165px;
+    height: 165px;
+}
+.product-container:hover .product-img-holder
+{
+    padding: 0.10%;
+}
+.product-prices
+{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.product-container .product-price
+{
+    color: rgb(255, 255, 255);
+    font-size: 12pt;
+    transition: all .2s ease-in-out;
+}
+
+.product-container .product-price.discounted
+{
+    text-decoration:line-through;
+    font-size: 8pt;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: rgba(255,255,255, 0.25) 0px 0px 2px, rgba(255,255,255, 0.25) 0px 2px 2px, rgba(255,255,255, 0.25) 0px -2px 2px;
+    transition: all .2s ease-in-out;
+}
+.product-container .product-price.discounted.theme
+{
+    text-decoration: line-through;
+    color: rgba(0,0,0, 0.5);
+    text-shadow:none;
+}
+
+.product-container:hover .product-price.discounted:hover
+{
+    text-decoration: none;
+}
+.product-container .product-discounted-price
+{
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(255, 255, 255 0.25) 0px 0px 2px, rgba(255, 255, 255 0.25) 0px 2px 2px, rgba(255, 255, 255 0.25) 0px -2px 2px;
+    transition: all .2s ease-in-out;
+    font-size: 12pt;
+}
+.product-container .product-discounted-price.theme,
+.product-container .product-price.theme
+{
+    color:  rgba(0,0,0, 1);
+    text-shadow:none;
+}
+.product-container .product-transactions
+{
+    display: flex;
+    flex-direction: row;
+}
+.product-container .product-transactions a
+{
+    font-size: 8pt;
+    transform: translate(10px,0px);
+    margin: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.product-container .product-transactions.theme a
+{
+    color: #0B0C10;
+}
+.product-container .product-transactions a img
+{
+    transition: all .2s ease-in-out;
+    margin-top: 4px;
+    width: 22px;
+    height: 22px;
+}
+.product-container:hover .product-transactions a img
+{
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 26px;
+    height: 26px;
+    box-shadow:none;
+}
+.product-container:hover .product-transactions a:hover img
+{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 30px;
+    height: 30px;
+    box-shadow:none;
+}

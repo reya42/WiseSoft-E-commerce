@@ -1,0 +1,111 @@
+.categories-error
+{
+    margin-top: 150px;
+    margin-left: 150px;
+    font-size: 48pt;
+    color: red;
+    font-weight: 600;
+}
+
+.categories-page-container
+{
+    width: 100%;
+    height: 860px;
+    margin-top: 85px;
+}
+.categories-data
+{
+    z-index: 100;
+    position: fixed;
+    margin: 40px 30px 30px 30px;
+    background-color: rgba(11, 12, 16,.8);
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+}
+.categories-title
+{
+    padding: 20px 20px 20px 23px;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: #0B0C10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.all-categories
+{
+    margin: 15px;
+}
+.all-categories a
+{
+    font-size: 14pt;
+    font-weight: 400;
+    color: rgb(172, 172, 172) !important;
+    width: fit-content;
+    transition: all .2s ease-in-out;
+}
+.all-categories a.active
+{
+    font-weight: 500;
+    color: rgb(238, 238, 238) !important;
+}
+.all-categories a.active:hover
+{
+    cursor:text;
+}
+.all-categories a:hover
+{
+    color: rgb(238, 238, 238) !important;
+    cursor: pointer;
+}
+.all-categories .root-categories
+{
+    font-size: 14pt;
+}
+.all-categories .child-categories
+{
+    font-size: 13pt;
+    margin-left: 20px;
+}
+.all-categories .grand-children-categories
+{
+    font-size: 12pt;
+    margin-left: 40px;
+}
+
+.product-chunk-container
+{
+    width: 80%;
+    height: 90%;
+    position: relative;
+    margin-left: auto;
+    padding-top: 85px;
+}
+.category-name
+{
+    position: absolute;
+    margin: 0px 30px 0px 30px;
+    top: 40px;
+    left: 50px;
+    width: fit-content;
+    height: fit-content;
+    color: #0B0C10;
+    font-size: 28pt;
+    font-weight: 700;
+}
+.categories-products-chunk
+{
+    display: flex;
+    margin: 0px 20px;
+}
+.page-changer-container
+{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0px);
+}
